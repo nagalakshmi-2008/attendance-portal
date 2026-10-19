@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h2>Welcome, <span id="displayRoll">Student</span>!</h2>
+            <button id="logoutBtn">Logout</button>
+        </header>
+
+        <!-- Status Card: Above or Below 75% -->
+        <div class="status-card" id="statusCard">
+            <h3>Overall Attendance Status</h3>
+            <p class="percentage-display"><span id="overallPercentage">0</span>%</p>
+            <p id="statusMessage">Checking eligibility...</p>
+        </div>
+
+        <!-- Attendance Breakdown Summary Grid -->
+        <div class="grid-layout">
+            <!-- Monthly Attendance Card -->
+            <div class="card">
+                <h3>Monthly Summary</h3>
+                <ul class="attendance-list">
+                    <li>Total Classes Held: <strong>160</strong></li>
+                    <li>Total Classes Attended: <strong>128</strong></li>
+                </ul>
+            </div>
+
+            <!-- Today's Period Attendance Card -->
+            <div class="card">
+                <h3>Today's Period Attendance</h3>
+                <ul class="period-list">
+                    <li>Period 1 (Maths): <span class="badge present">Present</span></li>
+                    <li>Period 2 (Physics): <span class="badge present">Present</span></li>
+                    <li>Period 3 (Chemistry): <span class="badge absent">Absent</span></li>
+                    <li>Period 4 (Lab): <span class="badge present">Present</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

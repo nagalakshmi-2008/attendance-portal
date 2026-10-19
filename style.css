@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f3f4f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Login Page UI */
+.login-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 { margin-bottom: 20px; text-align: center; color: #1e3a8a; }
+.input-field { margin-bottom: 20px; }
+.input-field label { display: block; margin-bottom: 6px; font-weight: 600; font-size: 14px; }
+.input-field input { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 15px; }
+
+button {
+    width: 100%; padding: 12px; background: #1e3a8a; color: white;
+    border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 16px;
+}
+button:hover { background: #1d4ed8; }
+.error-msg { color: #dc2626; margin-top: 10px; text-align: center; font-size: 14px; }
+
+/* Dashboard UI */
+.dashboard-container { background: white; width: 100%; max-width: 800px; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e5e7eb; padding-bottom: 15px; margin-bottom: 25px; }
+#logoutBtn { width: auto; padding: 8px 16px; background: #4b5563; }
+#logoutBtn:hover { background: #374151; }
+
+.status-card { text-align: center; padding: 25px; border-radius: 8px; margin-bottom: 25px; color: white; }
+.safe-status { background: #10b981; }     /* Green */
+.danger-status { background: #ef4444; }   /* Red */
+.percentage-display { font-size: 48px; font-weight: 800; margin: 10px 0; }
+
+.grid-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 600px) { .grid-layout { grid-template-columns: 1fr; } }
+
+.card { border: 1px solid #e5e7eb; padding: 20px; border-radius: 8px; background: #f9fafb; }
+.card h3 { margin-bottom: 15px; color: #1e3a8a; border-bottom: 1px solid #e5e7eb; padding-bottom: 5px; }
+.attendance-list li, .period-list li { list-style: none; padding: 10px 0; display: flex; justify-content: space-between; border-bottom: 1px dashed #e5e7eb; }
+
+.badge { padding: 4px 8px; border-radius: 4px; font-weight: bold; font-size: 12px; }
+.present { background: #d1fae5; color: #065f46; }
+.absent { background: #fee2e2; color: #991b1b; }

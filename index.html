@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Student Portal Login</h2>
+        <form id="studentLoginForm">
+            <div class="input-field">
+                <label>Roll Number</label>
+                <input type="text" id="rollNumber" required placeholder="e.g., 22X41A0501">
+            </div>
+            <div class="input-field">
+                <label>Password</label>
+                <input type="password" id="loginPassword" required placeholder="Enter password">
+            </div>
+            <button type="submit">Sign In</button>
+        </form>
+        <p id="loginError" class="error-msg"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
